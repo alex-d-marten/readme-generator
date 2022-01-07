@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "description": "[How to create a Professional README](./readme-guide.md)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-d-marten/readme-generator.git"
+  },
+  "author": "alex-d-marten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-d-marten/readme-generator/issues"
+  },
+  "homepage": "https://github.com/alex-d-marten/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
