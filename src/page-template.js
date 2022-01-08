@@ -15,23 +15,33 @@ const generateRequiredContent = (titleText, descriptionText, installationText, u
 * [Contribution Guidelines](#contribution)
 * [Testing](#testing)
 
+---
+
 ## Description
 ${descriptionText}
+
+---
 
 ## Installation
 ${installationText}
 
+---
+
 ## Usage
 ${usageText}
+
+---
 
 ## Questions
 If you have any questions about the project listed here or myself in general please contact me at ${emailText}. I will get back to you soon.
 
 Interested in any of my other projects? Check out my github [${githubText}](https://github.com/${githubText})
 
+---
+
 ## License
-License Notice:
-Please note that this project is covered under the ${licenseText} license.`
+Please note that this project is covered under the ${licenseText} license.
+---`
 };
 
 generateContributorsAndTests = (contributorsText, testingText) => {
