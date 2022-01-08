@@ -4,7 +4,7 @@ const generateRequiredContent = require('./src/page-template');
 const {writeMarkdown} = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const promptUser = markdownData => {
+const promptUser = () => {
     return inquirer.prompt([
         {
             type: 'input',
@@ -85,8 +85,8 @@ const promptUser = markdownData => {
         },
         {
             type: 'input',
-            name: 'contributors',
-            message: 'List any contributors to your project, if none then leave blank and press enter.'
+            name: 'contribution',
+            message: 'Provide any contribution guidelines for your project. If none then leave blank.'
         },
         {
             type: 'input',
