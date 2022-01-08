@@ -94,10 +94,10 @@ const promptUser = () => {
             message: 'If your project has tests, describe them and their intended use here. If none then leave blank and press enter.'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
-            message: 'Please select any license that applies to your project. If none apply, select None. (Required)',
-            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0','The Unlicense', 'None'],
+            message: 'Please select any license that applies to your project. (Required)',
+            choices: ['GNU_AGPLv3', 'GNU_GPLv3', 'GNU_LGPLv3', 'Mozilla_Public_2.0', 'Apache_2.0', 'MIT_License', 'Boost_Software_1.0','Unlicense'],
             validate: licenseInput => {
                 if(licenseInput) {
                     return true;

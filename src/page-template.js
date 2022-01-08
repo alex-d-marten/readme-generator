@@ -1,43 +1,54 @@
-const generateRequiredContent = (titleText, descriptionText, installationText, usageText, emailText, githubText) => {
+const licenseBadgeArr = []
+
+const generateRequiredContent = (titleText, descriptionText, installationText, usageText, emailText, githubText, licenseText) => {
     return `
 # ${titleText}
+
+![License](https://img.shields.io/badge/License-${licenseText}-blue.svg)
+
+## Table of contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Questions](#questions)
+* [License](#license)
+* [Contribution Guidelines](#contribution)
+* [Testing](#testing)
 
 ## Description
 ${descriptionText}
 
-## Table of contents
-
-
-## Installation Instructions
+## Installation
 ${installationText}
 
-## How to use this Project
+## Usage
 ${usageText}
 
-## Questions? Contact me!
+## Questions
 If you have any questions about the project listed here or myself in general please contact me at ${emailText}. I will get back to you soon.
 
-Interested in any of my other projects? Check out my github [${githubText}](https://github.com/${githubText})`
+Interested in any of my other projects? Check out my github [${githubText}](https://github.com/${githubText})
+
+## License
+License Notice:
+Please note that this project is covered under the ${licenseText} license.`
 };
 
 generateContributorsAndTests = (contributorsText, testingText) => {
     return `
-## Contributors
+## Contribution
 ${contributorsText}
 
 ## Testing
-${testingText}`;
+${testingText}`
 };
 
-// generateLicenseBadge = licenseBadge => {
-//     if(li)
-// }
+
 
 module.exports = markdownTemplate => {
-    const { title, description, installation, usage, email, github, contribution, testing} = markdownTemplate;
+    const { title, description, installation, usage, email, github, contribution, testing, license } = markdownTemplate;
 
     return `
-    ${generateRequiredContent(title, description, installation, usage, email, github)}
-    ${generateContributorsAndTests(contribution, testing)}
-    `;
+    ${generateRequiredContent(title, description, installation, usage, email, github, license)}
+    ${generateContributorsAndTests(contribution, testing)}`;
 };
