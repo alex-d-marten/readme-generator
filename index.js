@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const generateTitle = require('./src/page-template');
+const generateRequiredContent = require('./src/page-template');
 const {writeMarkdown} = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
@@ -8,7 +8,7 @@ const promptUser = markdownData => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'username',
+            name: 'github',
             message: 'What is your GitHub Username? (Required)',
             validate: usernameInput => {
                 if(usernameInput) {
@@ -113,7 +113,7 @@ const promptUser = markdownData => {
 promptUser()
     .then(markdownData => {
         console.log(markdownData)
-        return generateTitle(markdownData);
+        return generateRequiredContent(markdownData);
     })
     .then(pageMD => {
         return writeMarkdown(pageMD)

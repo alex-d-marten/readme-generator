@@ -1,4 +1,4 @@
-const generateTitle = (titleText, descriptionText, installationText, usageText) => {
+const generateRequiredContent = (titleText, descriptionText, installationText, usageText) => {
     return `
 # ${titleText}
 
@@ -14,12 +14,22 @@ ${installationText}
 ## How to use this Project
 ${usageText}
     `
+};
+
+generateQuestions = (emailText, githubText) => {
+    return `
+## Questions? Contact me!
+If you have any questions about the project listed here or myself in general please contact me at ${emailText}. I will get back to you soon.
+
+Interested in any of my other projects? Check out my github [${githubText}](https://github.com/${githubText})
+    `
 }
 
 module.exports = markdownTemplate => {
-    const { title, description, installation, usage } = markdownTemplate;
+    const { title, description, installation, usage, email, github} = markdownTemplate;
 
     return `
-    ${generateTitle(title, description, installation, usage)}
+    ${generateRequiredContent(title, description, installation, usage)}
+    ${generateQuestions(email, github)}
     `;
 };
