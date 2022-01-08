@@ -1,8 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const generateTitle = require('./src/page-template');
+const {writeMarkdown} = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const promptUser = () => {
+const promptUser = markdownData => {
     return inquirer.prompt([
         {
             type: 'input',
@@ -72,7 +74,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'What is the intended use of your project?',
+            message: 'What is the intended use of your project? (Required)',
             validate: usageInput => {
                 if(usageInput) {
                     return true;
@@ -109,8 +111,12 @@ const promptUser = () => {
 }
 
 promptUser()
-    .then(answers => {
-        console.log(answers)
+    .then(markdownData => {
+        console.log(markdownData)
+        return generateTitle(markdownData);
+    })
+    .then(pageMD => {
+        return writeMarkdown(pageMD)
     })
 
 // TODO: Create a function to write README file
