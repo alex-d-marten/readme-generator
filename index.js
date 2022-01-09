@@ -85,12 +85,12 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'contribution',
+            name: 'contributing',
             message: 'Provide any contribution guidelines for your project. If none then leave blank.'
         },
         {
             type: 'input',
-            name: 'testing',
+            name: 'tests',
             message: 'If your project has tests, describe them and their intended use here. If none then leave blank and press enter.'
         },
         {
