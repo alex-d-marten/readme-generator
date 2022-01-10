@@ -1,7 +1,5 @@
 # readme-generator
 
-
-
 ## Description
 
 The readme-generator is a command line interface program that generates a high quality README.md file for your projects. Simply running the program begins a series of prompts that ask questions pertaining to your project. As you answer the questions, the questions are saved as an object after which these answers are used to generate a README.md file. This file can then be used for your project!
@@ -30,15 +28,8 @@ This project's intended use is for anyone looking for a README.md file to be gen
 
 ---
 
-## Contributing
-
-Any contribution is welcomed!
-
----
-
-## Tests
-
-No tests are performed in the repository.
+## Vidoe Walkthrough of Project User
+[How to run the readme-generator](https://drive.google.com/file/d/1aSXsWtOnYJDmbs49sKo8ZPIgjoOMg7Xk/view?usp=sharing)
 
 ---
 

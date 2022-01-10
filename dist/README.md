@@ -1,12 +1,17 @@
 
     
-# Title
+# This is where the title goes!
 
 
+![License](https://img.shields.io/badge/License-MIT_License-blue.svg)
+
+## License
+
+This project is covered under the MIT_License license.
 
 ## Description
 
-Description
+Enter a project description here.
 
 ---
 
@@ -22,32 +27,32 @@ Description
 
 ## Installation
 
-Installation
+Describe how to install this project.
 
 ---
 
 ## Usage
 
-Usage
+Describe how to use this project.
 
 ---
 
 ## Contributing
 
-Contributing
+A space to provide guidance to those who would like to contribute.
 
 ---
 
 ## Tests
 
-Tests
+How do users perform your tests?
 
 ---
 
 ## Questions
 
-If you have any questions about the project listed here or myself in general please contact me at Email. I will get back to you as soon as possible, thanks!
+If you have any questions about the project listed here or myself in general please contact me at alexdmarten@gmail.com. I will get back to you as soon as possible, thanks!
 
-Interested in any of my other projects? Check out my github [Github](https://github.com/Github)
+Interested in any of my other projects? Check out my github [alex-d-marten](https://github.com/alex-d-marten)
 
 ---
